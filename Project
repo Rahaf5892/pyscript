@@ -1,0 +1,21 @@
+“Calculate BMI”
+
+# Enter the weight from user and convert it to float
+weight = float(input("Enter your weight in kg: "))
+
+# Enter the height from user and convert it to float
+height = float(input("Enter your height in cm: "))
+
+# Convert height from cm to meters
+height = height / 100
+
+# The formula of BMI
+BMI = weight / (height ** 2)
+
+# Check if the BMI is normal or not
+if BMI >= 25:
+    print("You need to go on a diet")
+elif BMI < 18.5:
+    print("You should eat more food")
+else:
+    print("You have a normal BMI")
